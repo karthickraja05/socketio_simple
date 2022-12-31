@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+    <title>ChatApp</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body class="chat">
+    <form id='message-form'onsubmit="event.preventDefault();">
+        <textarea name="message" id="message" cols="30" rows="10" style="resize: none;"></textarea>
+        <button onclick="sendMessage()" type="button">Send</button>
+    </form>
+    <div id="message_box">
+        <div class="container">
+            <b>Admin:</b><p>Welcome to Chat</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js" crossorigin="anonymous"></script>
+<script src="globalVariable.js"></script>
+<script type="module" src="socket.js"></script>
+<script src="commonFunction.js"></script>
