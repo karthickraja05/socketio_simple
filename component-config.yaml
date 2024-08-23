@@ -1,0 +1,4 @@
+# .choreo/component-config.yaml
+component:
+  name: simple-socket
+  version: 1.0.0
